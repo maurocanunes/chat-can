@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">chat-can</string>
+    <string name="title_activity_main">chat-can</string>
+    <string name="package_name">com.chatcam</string>
+    <string name="custom_url_scheme">com.chatcam</string>
+</resources>
