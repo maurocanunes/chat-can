@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.chatcam',
+  appId: 'com.chatcan.android',
   appName: 'chat-can',
   webDir: 'build',
   server: {

@@ -1,4 +1,4 @@
-package com.chatcam;
+package com.chatcan.android;
 
 import com.getcapacitor.BridgeActivity;
 
