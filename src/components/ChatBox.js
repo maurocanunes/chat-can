@@ -9,6 +9,7 @@ import {
 import { db } from "../Firebase";
 import Message from "./Message";
 import SendMessage from "./SendMessage";
+import addNotification from 'react-push-notification';
 
 const ChatBox = () => {
   const [messages, setMessages] = useState([]);
@@ -29,6 +30,15 @@ const ChatBox = () => {
       const sortedMessages = fetchedMessages.sort(
         (a, b) => a.createdAt - b.createdAt
       );
+      if (sortedMessages.length > messages.length) {
+        addNotification({
+          title: `Menssagem de ${sortedMessages[sortedMessages.length-1].name}`,
+          // subtitle: 'This is a subtitle',
+          message: 'This is a very long message',
+          theme: 'red',
+          native: true // when using native, your OS will handle theming.
+        });
+      }
       setMessages(sortedMessages);
     });
     return () => unsubscribe;
